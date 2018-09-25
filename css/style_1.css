@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-#wrapper {
-    width: 1000px;
-    margin: 0 auto;
-}
-
 html {
     background-color: #3C3C3B;
 }
@@ -84,4 +79,20 @@ ul.topnav li.right {
 
 h1 {
     font-size: 2em;
+}
+
+.leftcol {
+    float: left;
+    width: 50%;
+}
+
+.rightcol {
+    float: right;
+    width: 45%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
 }
