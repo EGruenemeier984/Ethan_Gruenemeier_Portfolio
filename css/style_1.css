@@ -11,7 +11,7 @@ body {
 
 #portfolio {
     color: #DEC0B2;
-    padding: 50px 0 0 50px;
+    padding-left: 50px;
 }
 
 .topnav {
@@ -58,12 +58,12 @@ ul.topnav li.right {
     float: right;
 }
 
-header#wrapper{
-    padding-bottom: 50px;
+header#wrapper {
+    padding-bottom: 25px;
 }
 
-#home {
-    background: url(#);
+#topimg {
+    background: url(../images/containerImg.jpg);
     background-size: cover;
     background-position: center;
     color: #434242;
@@ -71,7 +71,17 @@ header#wrapper{
 
 .content {
     position: relative;
-    padding: 10% 0 30% 0;
+    padding: 150px 0 400px 0;
+}
+
+.text-center h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #DEC0B2;
+    font-size: 4em;
+    text-shadow: 4px 2px #111;
 }
 
 .responsive {
@@ -147,9 +157,9 @@ h1 {
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: #414C53;
+    background-color: rgba(65, 76, 83, 0.7);
     /* Set a background color */
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     /* Text color */
     cursor: pointer;
     /* Add a mouse pointer on hover */
