@@ -11,7 +11,7 @@ body {
 
 #portfolio {
     color: #DEC0B2;
-    padding-left: 50px;
+    padding: 50px 0 0 50px;
 }
 
 .topnav {
@@ -58,20 +58,20 @@ ul.topnav li.right {
     float: right;
 }
 
-.container {
-    position: relative;
-    text-align: center;
-    color: #DEC0B2;
-    text-shadow: 2px 2px 3px #111;
-    margin-top: 20px;
+header#wrapper{
+    padding-bottom: 50px;
 }
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3em;
+#home {
+    background: url(#);
+    background-size: cover;
+    background-position: center;
+    color: #434242;
+}
+
+.content {
+    position: relative;
+    padding: 10% 0 30% 0;
 }
 
 .responsive {
