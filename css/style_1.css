@@ -62,7 +62,7 @@ header#wrapper {
 }
 
 #topimg {
-    background: url(../images/containerImg.jpg);
+    background-image: linear-gradient(to right, #414C53, #968879);
     background-size: cover;
     background-position: center;
     color: #434242;
@@ -109,7 +109,6 @@ h1 {
 }
 
 #personalp {
-    text-align: center;
     margin: 0px 200px 0px 200px;
 }
 
@@ -183,4 +182,18 @@ h1 {
 
 section#textContainer {
     margin-left: 50px;
+}
+
+.scontent {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.scontent {
+    padding-top: 60px;
 }
