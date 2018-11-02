@@ -27,17 +27,29 @@
   <!-- Add your site or application content here -->
   <header id="wrapper">
     <h1 id="portfolio">Portfolio</h1>
-    <ul class="topnav">
+    <button id="navButton" onclick="openNav()"></button>
+    <ul id="topnav">
       <li><a href="index.html">Home</a></li>
-      <li><a href="skills.html">Skills</a></li>
+      <li><a class="current" href="skills.html">Skills</a></li>
       <li><a href="aboutme.html">About Me</a></li>
       <li><a href="jobhistory.html">Job History</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact Me</a></li>
     </ul>
   </header>
+  <aside id="Mobilenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="current" href="skills.html">Skills</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="jobhistory.html"> Job History</a></li>
+      <li><a href="projects.html"> Projects</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </aside>
   <section id="topimg" class="text-center">
-    <div class="content">
+    <div class="IMGcontent">
       <div>
         <h1>Ethan M. Gruenemeier</h1>
       </div>
@@ -80,21 +92,22 @@
           </ul>
         </div>
         <div class="rightcol">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore modi quibusdam asperiores quidem,
-            nemo reprehenderit perspiciatis, doloribus sequi laboriosam cupiditate tempore sunt! Eveniet consequatur
-            eos
-            illo aliquid architecto fuga Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, voluptatem
-            cum nobis quas rem aspernatur? Odio, placeat, tempore officiis dolorem inventore nesciunt error voluptates
-            vel accusamus cum suscipit aspernatur reiciendis!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eum hic suscipit voluptatibus facilis,
-            reprehenderit consectetur necessitatibus, officiis maiores sapiente error, animi esse tempora labore
-            explicabo atque modi recusandae dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-            velit modi deleniti minus vitae numquam nihil nam, quas dicta, atque quidem molestias dignissimos.
-            Dignissimos repellat minima tempora iusto, commodi rerum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit dignissimos excepturi quasi itaque
-            illo facere ab distinctio illum, quidem atque veniam rerum consequatur id recusandae nihil culpa magni
-            doloremque.
-          </p>
+          <div id="skillsBar">
+            <p>HTML</p>
+            <div class="container">
+              <div class="skills html">95%</div>
+            </div>
+
+            <p>CSS</p>
+            <div class="container">
+              <div class="skills css">85%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="container">
+              <div class="skills javaScript">30%</div>
+            </div>
+          </div>
         </div>
       </div>
     </article>
@@ -109,7 +122,7 @@
     window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
   </script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

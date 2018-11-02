@@ -14,14 +14,14 @@ body {
     padding-left: 50px;
 }
 
-.topnav {
+#topnav {
     display: grid;
-    grid-gap: 10px;
     grid-template-columns: repeat(6, .25fr);
     padding-bottom: 100px;
+    z-index: 99;
 }
 
-ul.topnav {
+ul#topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -29,11 +29,11 @@ ul.topnav {
     background-color: #414C53;
 }
 
-ul.topnav li {
+ul#topnav li {
     float: left;
 }
 
-ul.topnav li a {
+ul#topnav li a {
     display: block;
     color: white;
     text-align: center;
@@ -41,20 +41,16 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-ul.topnav li.right {
+ul#topnav li.right {
     float: right;
 }
 
-ul.topnav li.right {
-    float: right;
-}
-
-ul.topnav li a:hover:not(.active) {
+ul#topnav li a:hover:not(.active) {
     background-color: #111;
 }
 
-ul.topnav li.right {
-    float: right;
+ul#topnav li a.current {
+    background-color: #333030;
 }
 
 header#wrapper {
@@ -105,22 +101,22 @@ header#wrapper {
 }
 
 #topimg {
-    background-image: linear-gradient(to right, #414C53, #968879);
+    background-image: url(../images/laptop-2243898.svg);
     background-size: cover;
     background-position: center;
     color: #434242;
 }
 
-.content {
+.IMGcontent {
     position: relative;
-    padding: 150px 0 400px 0;
+    padding: 20% 0 40% 0;
 }
 
 .text-center h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-45%, -100%);
     color: #DEC0B2;
     font-size: 4em;
     text-shadow: 4px 2px #111;
@@ -152,7 +148,7 @@ h1 {
 }
 
 #personalp {
-    margin: 0px 200px 0px 200px;
+    margin: 2%;
 }
 
 #navButton {
@@ -161,9 +157,12 @@ h1 {
     width: 34px;
     height: 34px;
     position: fixed;
+    top: 0%;
+    border: none;
+    margin: 2%;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:1024px) {
     .leftcol {
         width: 100%;
     }
@@ -172,26 +171,32 @@ h1 {
         width: 100%;
     }
 
-    #personalp {
-        margin: 0px;
-    }
-
     ul.topnav li {
         float: none;
     }
 
     #portfolio {
-        text-align: center;
+        margin: 2%;
     }
 
-    .topnav {
+    #topnav {
         display: none;
     }
 
     #navButton {
-        display: inline;
+        display: block;
     }
 
+    .text-center h1 {
+        font-size: 2em;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    .text-center h1 {
+        font-size: 1.25em;
+    }
 }
 
 #topBtn {
@@ -236,4 +241,52 @@ h1 {
 
 #textContainer {
     margin-left: 50px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    max-width: 1500px;
+    min-width: 1200px;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+#skillsBar {
+    box-sizing: border-box;
+    margin: 2%;
+}
+
+.container {
+    width: 100%;
+    background-color: #DEC0B2;
+}
+
+.skills {
+    text-align: right;
+    padding: 10px;
+    color: #DEC0B2;
+}
+
+.html {
+    width: 95%;
+    background-color: #4CAF50;
+}
+
+
+.css {
+    width: 85%;
+    background-color: #2196F3;
+}
+
+
+.javaScript {
+    width: 30%;
+    background-color: #f44336;
 }

@@ -27,17 +27,29 @@
   <!-- Add your site or application content here -->
   <header id="wrapper">
     <h1 id="portfolio">Portfolio</h1>
-    <ul class="topnav">
+    <button id="navButton" onclick="openNav()"></button>
+    <ul id="topnav">
       <li><a href="index.html">Home</a></li>
       <li><a href="skills.html">Skills</a></li>
       <li><a href="aboutme.html">About Me</a></li>
       <li><a href="jobhistory.html">Job History</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a class="current" href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact Me</a></li>
     </ul>
   </header>
+  <aside id="Mobilenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="jobhistory.html"> Job History</a></li>
+      <li><a class="current" href="projects.html"> Projects</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </aside>
   <section id="topimg" class="text-center">
-    <div class="content">
+    <div class="IMGcontent">
       <div>
         <h1>Ethan M. Gruenemeier</h1>
       </div>
@@ -97,7 +109,7 @@
     window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
   </script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

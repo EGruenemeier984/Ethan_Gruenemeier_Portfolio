@@ -27,17 +27,29 @@
   <!-- Add your site or application content here -->
   <header id="wrapper">
     <h1 id="portfolio">Portfolio</h1>
-    <ul class="topnav">
+    <button id="navButton" onclick="openNav()"></button>
+    <ul id="topnav">
       <li><a href="index.html">Home</a></li>
       <li><a href="skills.html">Skills</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
+      <li><a class="current" href="aboutme.html">About Me</a></li>
       <li><a href="jobhistory.html">Job History</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact Me</a></li>
     </ul>
   </header>
+  <aside id="Mobilenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul>
+      <li><a class="current" href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a class="current" href="aboutme.html">About Me</a></li>
+      <li><a href="jobhistory.html"> Job History</a></li>
+      <li><a href="projects.html"> Projects</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </aside>
   <section id="topimg" class="text-center">
-    <div class="content">
+    <div class="IMGcontent">
       <div>
         <h1>Ethan M. Gruenemeier</h1>
       </div>
@@ -58,6 +70,9 @@
             was 12 years old I have been messing around coding and programming. The very first project I attempted was
             an
             app that I made in MIT app inventor.</p>
+          <h2>Relevant Coursework:</h2>
+          <p>Computer Programming, Game Design, Marketing, Business Foundations, Spanish I/II,
+            Honors College Algebra, and Honors Brief-Calculus</p>
         </div>
         <div class="rightcol">
           <h2>Education:</h2>
@@ -65,11 +80,6 @@
           <h3>West-Mec Coding</h3>
           <h3>GPA: 3.8</h3>
         </div>
-      </div>
-      <h2>Relevant Coursework:</h2>
-      <p>Computer Programming, Game Design, Marketing, Business Foundations, Spanish I/II, and
-        Honors College Algebra, Honors Brief-Calculus</p>
-      </div>
       </div>
     </article>
   </section>
@@ -85,7 +95,7 @@
     window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
   </script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

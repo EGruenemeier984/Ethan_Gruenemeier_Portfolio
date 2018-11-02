@@ -1,5 +1,6 @@
 window.onscroll = function () {
     scrollFunction()
+    stickyFunction()
 };
 
 function scrollFunction() {
@@ -20,23 +21,35 @@ function topFunction() {
 // The nav button is also hidden when its pressed. 
 // If the nav is opened on mobile then it makes the whole screen the nav.
 function openNav() {
-    document.getElementById("leftnav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("Mobilenav").style.width = "250px";
+    // document.getElementById("main").style.marginLeft = "250px";
     document.getElementById("navButton").style.visibility = "hidden";
     if (mobileNav.matches) {
-        document.getElementById("leftnav").style.width = "100%";
-        document.getElementById("main").style.marginLeft = "100%";
+        document.getElementById("Mobilenav").style.width = "100%";
+        // document.getElementById("main").style.marginLeft = "100%";
     } else {
-        document.getElementById("leftnav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("Mobilenav").style.width = "250px";
+        // document.getElementById("main").style.marginLeft = "250px";
     }
 }
 // This closes nav makes the width and margins 0 and the button visible
 function closeNav() {
-    document.getElementById("leftnav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("Mobilenav").style.width = "0";
+    // document.getElementById("main").style.marginLeft = "0";
     document.getElementById("navButton").style.visibility = "visible";
 }
 // variable for the mobile nav when the users on mobile then creates listener to the open nav function.
 var mobileNav = window.matchMedia("(max-width: 600px)");
 mobileNav.addListener(openNav);
+
+// These are the variables for the topnav and the offset of the top nav bar as it relates to the screen
+var navbar = document.getElementById("topnav");
+var sticky = navbar.offsetTop;
+// This is the function for the sticky nav bar that removes or adds the sticky class based on its y axis offset.
+function stickyFunction() {
+    if (window.pageYOffset <= sticky) {
+        navbar.classList.remove("sticky");
+    } else if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    }
+}
