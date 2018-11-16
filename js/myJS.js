@@ -44,12 +44,13 @@ mobileNav.addListener(openNav);
 
 // These are the variables for the topnav and the offset of the top nav bar as it relates to the screen
 var navbar = document.getElementById("topnav");
-var sticky = navbar.offsetTop;
+var sticky = document.body.scrollTop;
+
 // This is the function for the sticky nav bar that removes or adds the sticky class based on its y axis offset.
 function stickyFunction() {
-    if (window.pageYOffset <= sticky) {
-        navbar.classList.remove("sticky");
-    } else if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
+    if (window.sticky > 90 || document.documentElement.scrollTop > 90) {
+        navbar.classList.add("sticky");
+    } else if (window.sticky < 90 || document.documentElement.scrollTop > 90) {
+        navbar.classList.remove("sticky")
     }
 }
