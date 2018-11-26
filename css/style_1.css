@@ -9,10 +9,37 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#topnav {
+#page-header {
+    height: 5em;
+}
+
+.nav-wrapper {
+    background: #414C53;
+}
+
+.nav-wrapper #topnav {
+    line-height: 2em;
     display: grid;
     grid-template-columns: repeat(6, .25fr);
     z-index: 99;
+}
+
+.content {
+    padding: 1em;
+}
+
+.nav-wrapper #topnav.sticky {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1500px;
+    min-width: 1200px;
+}
+
+.sticky+.content {
+    padding-top: 3em;
 }
 
 ul#topnav {
@@ -162,7 +189,7 @@ h1 {
         float: none;
     }
 
-    #topnav {
+    .nav-wrapper {
         display: none;
     }
 
@@ -171,7 +198,7 @@ h1 {
     }
 
     .text-center h1 {
-        font-size: 2em;
+        font-size: 1em;
     }
 
 }
@@ -224,22 +251,6 @@ h1 {
 
 #textContainer {
     margin-left: 50px;
-}
-
-.content {
-    padding: 16px;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    max-width: 1500px;
-    min-width: 1200px;
-    transition: width 2s linear 1s;
-}
-
-.sticky+.content {
-    padding-top: 60px;
 }
 
 #skillsBar {

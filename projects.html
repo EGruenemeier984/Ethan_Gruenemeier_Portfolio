@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="css/style_1.css" />
 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -26,16 +28,20 @@
 
   <!-- Add your site or application content here -->
   <header id="wrapper">
-     
+    <div id="page-header">
+      <h1 id="portfolio">Portfoilio</h1>
+    </div>
     <button id="navButton" onclick="openNav()"></button>
-    <ul id="topnav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="jobhistory.html">Job History</a></li>
-      <li><a class="current" href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact Me</a></li>
-    </ul>
+    <div class="nav-wrapper">
+      <ul id="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="jobhistory.html">Job History</a></li>
+        <li><a class="current" href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
   </header>
   <aside id="Mobilenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
