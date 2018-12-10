@@ -29,7 +29,7 @@
   <!-- Add your site or application content here -->
   <header id="wrapper">
     <div id="page-header">
-
+        <h1>Portfolio</h1>
     </div>
     <button id="navButton" onclick="openNav()"></button>
     <div class="nav-wrapper">
@@ -67,25 +67,19 @@
       <hr>
       <div class="row">
         <div class="leftcol">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore modi quibusdam asperiores quidem,
-            nemo reprehenderit perspiciatis, doloribus sequi laboriosam cupiditate tempore sunt! Eveniet consequatur
-            eos
-            illo aliquid architecto fuga Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, voluptatem
-            cum nobis quas rem aspernatur? Odio, placeat, tempore officiis dolorem inventore nesciunt error voluptates
-            vel accusamus cum suscipit aspernatur reiciendis!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eum hic suscipit voluptatibus facilis,
-            reprehenderit consectetur necessitatibus, officiis maiores sapiente error, animi esse tempora labore
-            explicabo atque modi recusandae dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-            velit modi deleniti minus vitae numquam nihil nam, quas dicta, atque quidem molestias dignissimos.
-            Dignissimos repellat minima tempora iusto, commodi rerum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit dignissimos excepturi quasi itaque
-            illo facere ab distinctio illum, quidem atque veniam rerum consequatur id recusandae nihil culpa magni
-            doloremque.</p>
+          <h2>Send an E-mail</h2>
+          <form action="/php/myPHP.php" id="form" method="post" name="form">
+              <input name="vname" placeholder="Your Name" type="text" value="">
+              <input name="vemail" placeholder="Your Email" type="text" value="">
+              <input name="sub" placeholder="Subject" type="text" value="">
+              <textarea name="msg" placeholder="Type your text here..." style="height:150px"></textarea>
+              <input id="send" name="submit" type="submit" value="Send Feedback">
+              </form>
         </div>
         <div class="rightcol">
-          <h3>Google Maps</h3>
+          <h2>Google Maps</h2>
           <div id="map"> </div>
-          <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfjuf--wapaQOL6iTUqEk6Ro53SxZhQz0&callback=initMap">
           </script>
         </div>
       </div>
