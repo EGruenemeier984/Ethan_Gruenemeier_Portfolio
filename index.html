@@ -11,10 +11,12 @@
   <link rel="manifest" href="site.webmanifest" />
   <link rel="apple-touch-icon" href="icon.png" />
   <!-- Place favicon.ico in the root directory -->
-
+  <!-- links to stylesheets -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/style_1.css" />
+  <!-- Link to icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
@@ -61,11 +63,20 @@
       <h1>Ethan M. Gruenemeier</h1>
     </div>
   </section>
-  <div id="personalp">
+  <br>
+  <div class="col-25">
+    <img src="images/headshot.png" alt="headshot" id="headshot" />
+  </div>
+  <div id="personalp" class="col-75">
     <h1>Personal Profile</h1>
     <hr>
     <p style="font-size: 1.5em;">Hard working, determined first year Coding student who is great with technology and
       able to work great with others. Seeking the position of Software Developer. </p>
+    <div id="resume-download">
+      <h2>Download My Resume Here</h2>
+      <a href="/downloadables/Ethan-Gruenemeier-Resume.docx" download="Ethan-Gruenemeier-Resume"><button class="download-btn"
+          style="width:100%"><i class="fa fa-download"></i>Download</button></a>
+    </div>
   </div>
 
   <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>

@@ -1,14 +1,17 @@
 @charset "utf-8";
 
-*{
+* {
     box-sizing: border-box;
+}
+
+html {
+    background: url("../images/background1.jpg") no-repeat;
 }
 
 
 body {
     color: #DEC0B2;
     font-family: 'Josefin Sans', sans-serif;
-    background: url("../images/background1.jpg") no-repeat;
 }
 
 #page-header {
@@ -68,7 +71,7 @@ ul#topnav li.right {
 }
 
 ul#topnav li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #A99888;
 }
 
 ul#topnav li a.current {
@@ -158,6 +161,18 @@ h1 {
 .rightcol {
     float: right;
     width: 45%;
+    padding-right: 2em;
+}
+
+.col-75 {
+    float: right;
+    width: 75%;
+}
+
+.col-25 {
+    float: left;
+    width: 20%;
+    margin-left: .9em;
 }
 
 .row::after {
@@ -185,10 +200,12 @@ h1 {
 @media screen and (max-width:1024px) {
     .leftcol {
         width: 100%;
+        padding-right: 2em;
     }
 
     .rightcol {
         width: 100%;
+        padding-right: 2em;
     }
 
     ul.topnav li {
@@ -212,12 +229,14 @@ h1 {
 @media screen and (max-width: 414px) {
     .text-center h1 {
         font-size: 1.25em;
+        white-space: nowrap;
     }
 
-    .column, input[type=submit] {
+    .column,
+    input[type=submit] {
         width: 100%;
         margin-top: 0;
-      }
+    }
 }
 
 #topBtn {
@@ -298,28 +317,58 @@ h1 {
 }
 
 #map {
-    height: 400px;  
-    width: 90%; 
+    height: 400px;
+    width: 90%;
     margin-bottom: 3em;
-   }
+}
 
-   input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: #333030;
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: #414C53;
-  }
+}
+
+.download-btn {
+    background-color: #414C53;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.download-btn:hover {
+    background-color: #A99888;
+}
+
+.download-btn a {
+    text-decoration: none;
+    color: #DEC0B2;
+}
+
+#resume-download {
+    margin: 2%;
+}
+
+#headshot {
+    width: 250px;
+    height: 325px;
+    border-radius: 1em;
+}
