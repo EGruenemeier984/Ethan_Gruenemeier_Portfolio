@@ -59,7 +59,7 @@ $(window).scroll(function () {
 //   }
 // }
 // ====================================================================================================
-
+// Top Button Function
 window.onscroll = function () {
     scrollFunction()
 };
@@ -82,20 +82,34 @@ function topFunction() {
 
 // Initialize and add the map
 function initMap() {
-    // The location of Uluru
-    var uluru = {
+    // The location of home
+    var home = {
         lat: 33.677990,
         lng: -112.288630
     };
-    // The map, centered at Uluru
+    // The map, centered at home
     var map = new google.maps.Map(
         document.getElementById('map'), {
             zoom: 15,
-            center: uluru
+            center: home
         });
-    // The marker, positioned at Uluru
+    // The marker, positioned at home
     var marker = new google.maps.Marker({
-        position: uluru,
+        position: home,
         map: map
     });
+}
+
+// Code for the pre-loader
+
+var loader;
+
+function loadFunction() {
+    loader = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("contentdiv").style.display = "block";
+
 }
