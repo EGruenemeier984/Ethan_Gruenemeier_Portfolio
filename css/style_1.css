@@ -6,12 +6,16 @@
 
 html {
     background: url("../images/background1.jpg") no-repeat;
+    height: 100%;
+    margin: 0;
 }
 
 
 body {
     color: #DEC0B2;
     font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+    margin: 0;
 }
 
 #page-header {
@@ -187,7 +191,7 @@ h1 {
 
 #navButton {
     display: none;
-    background: url("../Images/Three\ Lines\ .png") no-repeat;
+    background: url("../Images/ThreeLines.png") no-repeat;
     width: 34px;
     height: 34px;
     position: fixed;
@@ -322,6 +326,10 @@ h1 {
     margin-bottom: 3em;
 }
 
+input,textarea{
+    border-radius: 2em;
+}
+
 input[type=text],
 select,
 textarea {
@@ -371,4 +379,19 @@ input[type=submit]:hover {
     width: 250px;
     height: 325px;
     border-radius: 1em;
+}
+
+footer{
+    background-color: #A99888;
+    text-align: center;
+    padding: 1em;
+    color: #111;
+}
+
+#f-create{
+    margin-top: 1em; 
+}
+
+.paragraph{
+    text-indent: 1.5em;
 }
