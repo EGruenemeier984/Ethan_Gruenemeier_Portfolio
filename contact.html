@@ -12,11 +12,11 @@
   <link rel="manifest" href="site.webmanifest" />
   <link rel="apple-touch-icon" href="icon.png" />
   <!-- Place favicon.ico in the root directory -->
-
+  <!-- This includes all the links to the css -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/style_1.css" />
-
+  <!-- links to the google font and the jquery -->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -28,6 +28,7 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+  <!-- This is the header that contains the nav bar and the text of portfolio. -->
   <header id="wrapper">
     <div id="page-header">
       <h1>Portfolio</h1>
@@ -44,6 +45,7 @@
       </ul>
     </div>
   </header>
+  <!-- This aside contains the mobile navigation menu that comes from the left side of the page. -->
   <aside id="Mobilenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <ul>
@@ -55,6 +57,7 @@
       <li><a class="current" href="contact.html">Contact Me</a></li>
     </ul>
   </aside>
+  <!-- This is the section element that has a background image with text centered on it -->
   <section id="topimg" class="text-center">
     <div class="IMGcontent">
       <div>
@@ -62,6 +65,7 @@
       </div>
     </div>
   </section>
+  <!-- This container holds all of the content for my projects that I have completed. -->
   <section id="textContainer">
     <article id="contact">
       <h1>Contact Me</h1>
@@ -77,6 +81,7 @@
             <input id="send" name="submit" type="submit" value="Send Feedback">
           </form>
         </div>
+        <!-- This is the code that seperates the page into columns. -->
         <div class="rightcol">
           <h2>Google Maps</h2>
           <div id="map"> </div>
@@ -86,8 +91,9 @@
       </div>
     </article>
   </section>
+  <!-- brings the user to the top of the screen on click -->
   <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
-
+  <!-- This is the footer that includes links to social media. -->
   <footer>
     <a href="https://www.instagram.com/ethannnn6122"><img src="images/instagram-logo.svg" alt="instagram"></a>
     <a href="https://twitter.com/EGruenemeier"><img src="images/twitter-logo.svg" alt="twitter"></a>
@@ -95,7 +101,7 @@
   </footer>
 
 
-
+  <!-- links to java script files. -->
   <script src="js/myJS.js"></script>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

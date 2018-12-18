@@ -1,23 +1,25 @@
+/* This sets the character encoding for the document to use. */
 @charset "utf-8";
 
+/* This is effects evrey single element and sets the box sizing to border box */
 * {
     box-sizing: border-box;
 }
 
+/* This effectst the HTML element and sets the background to an image that doesn;t repeat and sets the height to 100% along with setting all the margins to 0. */
 html {
     background: url("../images/background1.jpg") no-repeat;
     height: 100%;
     margin: 0;
 }
 
-
+/* This effects the body element and sets the text color to a hex value and the font family is set to the google font used */
 body {
     color: #DEC0B2;
     font-family: 'Josefin Sans', sans-serif;
-    height: 100%;
-    margin: 0;
 }
 
+/* This effects the id of page header and sets the height to 2.5ems and aligns the text to the center. This also sets the font size and the top margin to a negative value. */
 #page-header {
     height: 2.5em;
     text-align: center;
@@ -25,10 +27,12 @@ body {
     margin-top: -1em;
 }
 
+/* This effects the nav wrapper class and sets the background to a hex value. */
 .nav-wrapper {
     background: #414C53;
 }
 
+/* This effects the id topnav thats in the class of nav wrapper and sets line height, sets display to grid, sets the columns, and the z-index. */
 .nav-wrapper #topnav {
     line-height: 2em;
     display: grid;
@@ -36,10 +40,12 @@ body {
     z-index: 99;
 }
 
+/* This effects the class of content and sets the padding of the entire thing to 1 em. */
 .content {
     padding: 1em;
 }
 
+/* This effects the id of topnav with the sticky class thats in the nav wrapper class and sets the position to fixed. This also sets z-index, sets top left and right coordinates to 0 and set a max and min width. */
 .nav-wrapper #topnav.sticky {
     position: fixed;
     z-index: 10000;
@@ -50,10 +56,12 @@ body {
     min-width: 1200px;
 }
 
+/* This effects the sticky class and the content class and sets the top padding to 3em. */
 .sticky+.content {
     padding-top: 3em;
 }
 
+/* This effects the unordered list element with the ID of topnav and sets the margin and padding to 0 plus gets rid of the list style. Also hides overflow plus sets background color. */
 ul#topnav {
     list-style-type: none;
     margin: 0;
@@ -62,6 +70,7 @@ ul#topnav {
     background-color: #414C53;
 }
 
+/* This effects the links that are in list items the are in the topnav unordered list. This sets the display to block, the text color to white , aligns the text to the center, adds padding, and finally gets rid of the text decoration. */
 ul#topnav li a {
     display: block;
     color: white;
@@ -70,18 +79,22 @@ ul#topnav li a {
     text-decoration: none;
 }
 
+/* THis effects the list item with the class of right thats in the topnav unordered list and floats the content to the right. */
 ul#topnav li.right {
     float: right;
 }
 
+/* This effects the links that are hovered on that are in list items that are in the topnav list and sets the background color to a hex value. */
 ul#topnav li a:hover:not(.active) {
     background-color: #A99888;
 }
 
+/* This effects the links with the class of current that is in the list item thats in the topnav list and sets the color of it. */
 ul#topnav li a.current {
     background-color: #333030;
 }
 
+/* This effects the mobile nav id and makes the height 100% and width 0. Also makes the position fixed and the z-index is set to 99. also the top and left coordinates are set to 0. The background color is also set to a hex value and the overflow in the x direction is hidden along with the top padding being set to 30 pixels and the transitions set to 0.5s */
 #Mobilenav {
     height: 100%;
     width: 0;
@@ -95,6 +108,7 @@ ul#topnav li a.current {
     transition: 0.5s;
 }
 
+/* This effects the links in the mobile nav id and sets padding, gets rid of text decoration, sets font size, sets the color, sets the display to blocka and finally specifies the transition time. */
 #Mobilenav a {
     padding: 10px 0px 6px 16px;
     text-decoration: none;
@@ -104,14 +118,17 @@ ul#topnav li a.current {
     transition: 0.3s;
 }
 
+/* This effects the unordered list in the mobilenav id and gets rid of the list styles type. */
 #Mobilenav ul {
     list-style-type: none;
 }
 
+/* This effects the links hovered on in the mobilenav id and sets the color to a hex value. */
 #Mobilenav a:hover {
     color: #f1f1f1;
 }
 
+/* This effects the closebtn class thats in the mobilenav id and sets the position to absolute, specifies the top and right coordinates plus specifies the font size as well as the margin on the left size*/
 #Mobilenav .closebtn {
     position: absolute;
     top: 0;
@@ -120,11 +137,13 @@ ul#topnav li a.current {
     margin-left: 45px;
 }
 
+/* This effects the main id and sets the transition to .5s and the padding is set to 20px. */
 #main {
     transition: .5s;
     padding: 20px;
 }
 
+/* This is effects the id of topimg and sets the background to an image and changes the size of the image to cover the space and centers the image. */
 #topimg {
     background-image: url("../images/bannerMAC.jpg");
     background-size: cover;
@@ -132,11 +151,13 @@ ul#topnav li a.current {
     color: #434242;
 }
 
+/* This effects the class of IMGcontent and sets the position to relative and sets the top and bottom padding to percentages. */
 .IMGcontent {
     position: relative;
     padding: 20% 0 40% 0;
 }
 
+/* This effects the h1 in the text-center class and sets the position to absolute and centers the text in the class of text center also adds color , fontsize and a text shadow. */
 .text-center h1 {
     position: absolute;
     top: 50%;
@@ -147,48 +168,44 @@ ul#topnav li a.current {
     text-shadow: 4px 2px #111;
 }
 
+/* This effects the class of responsive and sets the max width to 100% and the height to auto. */
 .responsive {
     max-width: 100%;
     height: auto;
 }
 
+/* This effects the h1's and sets font size and adds a text shadow to the heading. */
 h1 {
     font-size: 2em;
     text-shadow: #222 3px 4px 2px;
 }
 
+/* This effectst the class of left col and flloats its content to the left and makes the width 50% */
 .leftcol {
     float: left;
     width: 50%;
 }
 
+/* This effects the class of right col and floats the content to the right with the width of 45% and the padding on the right is set to 2em */
 .rightcol {
     float: right;
     width: 45%;
     padding-right: 2em;
 }
 
-.col-75 {
-    float: right;
-    width: 75%;
-}
-
-.col-25 {
-    float: left;
-    width: 20%;
-    margin-left: .9em;
-}
-
+/* THis effects the space after the class of row and sets the content to an empty string and display is set to grid and it also clears all floats. */
 .row::after {
     content: "";
     display: grid;
     clear: both;
 }
 
+/* This effects the id of personalp and adds a margin of 2%. */
 #personalp {
     margin: 2%;
 }
 
+/* This effects the navbutton id and sets the dispaly, backgeound,widht, height, position, top coordinates, border, margin, and z-index */
 #navButton {
     display: none;
     background: url("../Images/ThreeLines.png") no-repeat;
@@ -201,41 +218,53 @@ h1 {
     z-index: 99;
 }
 
+/* This is a media query for screens the have a width of 1024px or lower */
 @media screen and (max-width:1024px) {
+
+    /* This sets the left col to 100% and the padding on the right is added */
     .leftcol {
         width: 100%;
         padding-right: 2em;
     }
 
+    /* This sets the rightcol to 100% and adds padding to the right. */
     .rightcol {
         width: 100%;
         padding-right: 2em;
     }
 
+    /* This effects the list item in the unordered list of topnav and sets the float to none. */
     ul.topnav li {
         float: none;
     }
 
+    /* THis effects the class of nav-wrapper and sets the display to none  */
     .nav-wrapper {
         display: none;
     }
 
+    /* This effects the id of navbutton and sets the display to block */
     #navButton {
         display: block;
     }
 
+    /* This effects the h1 in the class of text center */
     .text-center h1 {
-        font-size: 1em;
+        font-size: 1.25em;
     }
 
 }
 
+/* This effects the screens that are smaller than 414 pixels  */
 @media screen and (max-width: 414px) {
+
+    /* This effects the h1 in the class of text-center and also sets the text to not wrap. */
     .text-center h1 {
         font-size: 1.25em;
         white-space: nowrap;
     }
 
+    /* This effects the coloumn class and the input with the type of submit and sets the width, and margin top */
     .column,
     input[type=submit] {
         width: 100%;
@@ -243,6 +272,7 @@ h1 {
     }
 }
 
+/* This effects the id of topBtn and sets a bunch of stuff */
 #topBtn {
     display: none;
     /* Hidden by default */
@@ -272,64 +302,73 @@ h1 {
     /* Increase font size */
 }
 
+/* This effects the id of topBtn when hovered over and sets the background color */
 #topBtn:hover {
     background-color: #555;
-    /* Add a dark-grey background on hover */
 }
 
+/* This effects the id  and sets the display to grid and sets a grid gap and also seperates into columns */
 #h3seperate {
     display: grid;
     grid-gap: 1em;
     grid-template-columns: .5fr .5fr .5fr;
 }
 
+/* This effects the id and sets the margins on the left to 50px */
 #textContainer {
     margin-left: 50px;
 }
 
+/* This effects the id of skills bar and sets the margin to 2%. */
 #skillsBar {
     margin: 2%;
 }
 
+/* This effects the container class and sets the width to 100% and the background color is set. */
 .container {
     width: 100%;
     background-color: #DEC0B2;
 }
 
+/* This effects the skills class and aligns the text to the right and sets padding as well as font color. */
 .skills {
     text-align: right;
     padding: 10px;
     color: #DEC0B2;
 }
 
+/*This effects the class of html and sets the width to 95% and establishes the color  */
 .html {
     width: 95%;
     background-color: #4CAF50;
 }
 
-
+/* This effects the class of css and sets the width to 85% and estbalishes the color */
 .css {
     width: 85%;
     background-color: #2196F3;
 }
 
-
+/* THis effects the class of javascript and sets the width to 30% and establishes a color */
 .javaScript {
     width: 30%;
     background-color: #f44336;
 }
 
+/* This effects the id of map and sets the height of 400px and sets width plus the bottom margin.*/
 #map {
     height: 400px;
     width: 90%;
     margin-bottom: 3em;
 }
 
+/* This effects the inputs and the text area elements and sets the border radius  */
 input,
 textarea {
     border-radius: 2em;
 }
 
+/* This effects the input with the type of text, the select element, and the text area element. This sets the width, padding, border, margins and sets resize to none */
 input[type=text],
 select,
 textarea {
@@ -338,9 +377,16 @@ textarea {
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;
+    resize: none;
 }
 
+/* This effects the input when the user is focusing on that input and the same for the textarea and sets the outline to none.  */
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* This effects the input withthe type of submit and sets the background color, text color, padding, border, and cursor. */
 input[type=submit] {
     background-color: #333030;
     color: white;
@@ -349,10 +395,12 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/* This effects the input with the type of submit when its hovered over and sets the background to a hex value */
 input[type=submit]:hover {
     background-color: #414C53;
 }
 
+/* This effects the the class of download-btn and also sets the backgorund color, border, color , padding, cursor, and font size. */
 .download-btn {
     background-color: #414C53;
     border: none;
@@ -362,25 +410,23 @@ input[type=submit]:hover {
     font-size: 20px;
 }
 
+/* This effects the class of download btn when hovered over and the background color is set to hex value. */
 .download-btn:hover {
     background-color: #A99888;
 }
 
+/* This effects the links in the downloadbtn class and sets the text decoration to none and the color is set to a hex value. */
 .download-btn a {
     text-decoration: none;
     color: #DEC0B2;
 }
 
+/* This effects the id of resume download and sets the margins to 2%. */
 #resume-download {
     margin: 2%;
 }
 
-#headshot {
-    width: 250px;
-    height: 325px;
-    border-radius: 1em;
-}
-
+/* This effects the footer and sets the background color to a hex value and the text is centerd as well as padding is set. */
 footer {
     background-color: #A99888;
     text-align: center;
@@ -388,14 +434,17 @@ footer {
     color: #111;
 }
 
+/* This effcts the id f-create and sets the top margin. */
 #f-create {
     margin-top: 1em;
 }
 
+/* This effects the class of paragraph and adds a text indent of 1.5 em. */
 .paragraph {
     text-indent: 1.5em;
 }
 
+/* This effects the id of loader and sets the coordinates of it to the center and adds the spin animation to it. also adds margins and borders. */
 #loader {
     position: absolute;
     left: 50%;
@@ -413,6 +462,7 @@ footer {
     animation: spin 2s linear infinite;
 }
 
+/* This is the keyframe for the spin animation for roatating  */
 @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
@@ -423,6 +473,7 @@ footer {
     }
 }
 
+/* This is the same thing as the webkit */
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -442,6 +493,7 @@ footer {
     animation-duration: 1s
 }
 
+/* This is the webkit animation for animate bottom */
 @-webkit-keyframes animatebottom {
     from {
         bottom: -100px;
@@ -454,6 +506,7 @@ footer {
     }
 }
 
+/* THis is the animation from 100px from the bottom and sets it to 0 */
 @keyframes animatebottom {
     from {
         bottom: -100px;
@@ -466,6 +519,7 @@ footer {
     }
 }
 
+/* This effects the id of contentdiv and sets the displat to none. */
 #contentdiv {
     display: none;
 }

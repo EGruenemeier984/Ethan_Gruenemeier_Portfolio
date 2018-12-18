@@ -22,7 +22,7 @@ $headers .= 'Cc:'. $email2 . "rn"; // Carbon copy to Sender
 $message = wordwrap($message, 70);
 // Send Mail By PHP Mail Function
 mail("ethanthebro@gmail.com", $subject, $message, $headers);
-echo "Your mail has been sent successfuly ! Thank you for your feedback";
+echo "<script type='text/javascript'>alert('Thank You! Message Sent!');</script";
 }
 }
 }

@@ -63,7 +63,7 @@ $(window).scroll(function () {
 window.onscroll = function () {
     scrollFunction()
 };
-
+// This function sets an element to displlay based on a position scrolled down the screen
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("topBtn").style.display = "block";
@@ -101,13 +101,13 @@ function initMap() {
 }
 
 // Code for the pre-loader
-
+// This establishes the variable for the loader
 var loader;
-
+// This function sets the variable to an order pair x being the showPage function and the time in milliseconds being the y.
 function loadFunction() {
     loader = setTimeout(showPage, 2000);
 }
-
+// This function sets the display of loader to none and the display of content div to block.
 function showPage() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("contentdiv").style.display = "block";

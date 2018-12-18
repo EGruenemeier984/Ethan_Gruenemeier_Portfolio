@@ -12,11 +12,11 @@
   <link rel="manifest" href="site.webmanifest" />
   <link rel="apple-touch-icon" href="icon.png" />
   <!-- Place favicon.ico in the root directory -->
-
+  <!-- links to the css stylesheets  -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/style_1.css" />
-
+  <!-- links to the google font and the jquery  -->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -28,10 +28,12 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+  <!-- This is the header that contains the text portfolio and the navigation bar -->
   <header id="wrapper">
     <div id="page-header">
       <h1>Portfolio</h1>
     </div>
+    <!-- This is the button for the mobile nav  -->
     <button id="navButton" onclick="openNav()"></button>
     <div class="nav-wrapper">
       <ul id="topnav">
@@ -44,6 +46,7 @@
       </ul>
     </div>
   </header>
+  <!-- This is the aside that contains the mobile nav that opens from the side -->
   <aside id="Mobilenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <ul>
@@ -55,6 +58,7 @@
       <li><a href="contact.html">Contact Me</a></li>
     </ul>
   </aside>
+  <!-- This section element is the image near the top of the screen with text centered on top of it. -->
   <section id="topimg" class="text-center">
     <div class="IMGcontent">
       <div>
@@ -62,6 +66,7 @@
       </div>
     </div>
   </section>
+  <!-- This container holds all the content for my job history and also seperates certain strings of text.  -->
   <section id="textContainer">
     <article id="jobhistory">
       <h1>Job History</h1>
@@ -77,6 +82,7 @@
             and
             cleaning around the store.</p>
         </div>
+        <!-- THis pushes all of the content in this div to the right -->
         <div class="rightcol">
           <div id="h3seperate">
             <h3>Soccer Referee</h3>
@@ -89,15 +95,15 @@
       </div>
     </article>
   </section>
-
+  <!-- brings the user to the top of the page. -->
   <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
-
+  <!-- This is the footer that includes links to my social media -->
   <footer>
     <a href="https://www.instagram.com/ethannnn6122"><img src="images/instagram-logo.svg" alt="instagram"></a>
     <a href="https://twitter.com/EGruenemeier"><img src="images/twitter-logo.svg" alt="twitter"></a>
     <div id="f-create">Created by Ethan Gruenemeier</div>
   </footer>
-
+  <!-- links to the javascript files-->
   <script src="js/myJS.js"></script>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
