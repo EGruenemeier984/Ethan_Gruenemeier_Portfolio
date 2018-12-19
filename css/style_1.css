@@ -208,7 +208,7 @@ h1 {
 /* This effects the navbutton id and sets the dispaly, backgeound,widht, height, position, top coordinates, border, margin, and z-index */
 #navButton {
     display: none;
-    background: url("../Images/ThreeLines.png") no-repeat;
+    background: transparent;
     width: 34px;
     height: 34px;
     position: fixed;
