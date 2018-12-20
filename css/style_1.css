@@ -8,7 +8,7 @@
 
 /* This effectst the HTML element and sets the background to an image that doesn;t repeat and sets the height to 100% along with setting all the margins to 0. */
 html {
-    background: url("../images/background1.jpg") no-repeat;
+    background: #434242;
     height: 100%;
     margin: 0;
 }
@@ -249,8 +249,17 @@ h1 {
     }
 
     /* This effects the h1 in the class of text center */
-    .text-center h1 {
-        font-size: 1.25em;
+    .IMGcontent h1 {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .nav-wrapper #topnav.sticky {
+        max-width: 1200px;
+        min-width: 700px;
     }
 
 }
@@ -455,7 +464,7 @@ footer {
     margin: -75px 0 0 -75px;
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #3498db;
+    border-top: 16px solid #A99888;
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
@@ -496,7 +505,7 @@ footer {
 /* This is the webkit animation for animate bottom */
 @-webkit-keyframes animatebottom {
     from {
-        bottom: -100px;
+        bottom: -500px;
         opacity: 0
     }
 
@@ -509,7 +518,7 @@ footer {
 /* THis is the animation from 100px from the bottom and sets it to 0 */
 @keyframes animatebottom {
     from {
-        bottom: -100px;
+        bottom: -500px;
         opacity: 0
     }
 
